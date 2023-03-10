@@ -15,6 +15,5 @@ export default {
 
 <template>
   <input :value="text" @input="onInput" placeholder="Type here" />
-  <p>{{ text }}</p>
-  <h1>hello</h1>
+  <p>hello {{ text }}</p>
 </template>

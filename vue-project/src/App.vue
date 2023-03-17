@@ -1,5 +1,6 @@
 <script setup>
-const toppings = [
+import { Ref } from 'vue';
+const Ref toppings = [
   { name: 'Pepperoni', img: 'https://trottospizza.com/wp-content/uploads/2017/12/pepperoni.png' },
   {
     name: 'Sausage',
@@ -13,14 +14,15 @@ const toppings = [
   { name: 'Onions' },
   { name: 'Peppers' },
   { name: 'Chicken' }
-]
+])
 console.log(toppings)
 </script>
 
 <template>
-  <li v-for="topping in toppings">
-    {{ topping.name }}
-  </li>
+  <div v-for="topping in toppings">
+    <h1>{{ topping.name }}</h1>
+    <h2>{{ topping.img }}</h2>
+  </div>
 </template>
 
 <style scoped></style>

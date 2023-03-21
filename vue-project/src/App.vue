@@ -1,50 +1,33 @@
 <script setup>
-const toppings = [
-  {
-    name: 'Pepperoni',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/pepperoni.png'
-  },
-  {
-    name: 'Sausage',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/beef.png'
-  },
-  {
-    name: 'Mushrooms',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/mushrooms.png'
-  },
-  {
-    name: 'Chicken',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/chicken.png'
-  },
-  {
-    name: 'Bacon',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/bacon.png'
-  },
-  {
-    name: 'Cheese',
-    img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png'
-  }
-]
+import toppings from '../src/components/ToppingSelector.vue'
 </script>
 
 <template>
-  <div v-for="topping in toppings" class="select">
-    <h1 class="selector-text">{{ topping.name }}</h1>
-    <img :src="topping.img" />
+  <div class="website">
+    <div class="page-header">
+      <h1>Test</h1>
+    </div>
+    <div class="create">
+      <img
+        src="https://212newyorkpizza.com/wp-content/uploads/2019/01/pizza-crust.png"
+        class="main"
+      />
+    </div>
+    <div class="display"><toppings></toppings></div>
   </div>
 </template>
 <!-- https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/tomato-sauce.png -->
-<!-- https://212newyorkpizza.com/wp-content/uploads/2019/01/pizza-crust.png -->
 <style scoped>
-.selector-text {
+h1 {
   text-align: center;
 }
-.select {
-  align-content: center;
+.website {
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  border: 5px solid rgb(0, 0, 0);
-  padding: 20px;
-  margin: 20px;
+}
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 </style>

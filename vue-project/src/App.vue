@@ -6,17 +6,27 @@ import toppings from '../src/components/ToppingSelector.vue'
   <div class="website">
     <div class="page-header">
       <h1>Test</h1>
+      <div class="create">
+        <img
+          src="https://212newyorkpizza.com/wp-content/uploads/2019/01/pizza-crust.png"
+          class="main"
+        />
+        <img
+          src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/tomato-sauce.png"
+          class="main"
+        />
+        <img
+          src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png"
+          class="main"
+        />
+        <img
+          src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/pepperoni.png"
+          class="main"
+        />
+      </div>
     </div>
-    <div class="create">
-      <img
-        src="https://212newyorkpizza.com/wp-content/uploads/2019/01/pizza-crust.png"
-        class="main"
-      />
-    </div>
-    <div class="display"><toppings></toppings></div>
   </div>
 </template>
-<!-- https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/tomato-sauce.png -->
 <style scoped>
 h1 {
   text-align: center;
@@ -29,5 +39,12 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.main {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  width: 500px;
+  align-content: center;
 }
 </style>

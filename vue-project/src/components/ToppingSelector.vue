@@ -30,18 +30,23 @@ const toppings = [
 <template>
   <div v-for="topping in toppings" class="select">
     <h2 class="selector-text">{{ topping.name }}</h2>
-    <img :src="topping.img" class="img" />
+    <img :src="topping.img" class="img" draggable="false" />
   </div>
 </template>
 
 <style scoped>
 .select {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border: 5px solid rgb(0, 0, 0);
   padding: 20px;
   margin: 20px;
   width: 200px;
+  align-content: center;
+}
+.select:hover {
+  transform: translateY(-10px);
 }
 .selector-text {
   text-align: center;

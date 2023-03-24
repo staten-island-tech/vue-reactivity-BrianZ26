@@ -25,10 +25,15 @@ const toppings = [
     img: 'https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png'
   }
 ]
+const pizza = []
+function pizzaCreate() {
+  pizza.push('https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png')
+  console.log(pizza)
+}
 </script>
 
 <template>
-  <div v-for="topping in toppings" class="select">
+  <div v-for="topping in toppings" class="select" @click="pizzaCreate()">
     <h2 class="selector-text">{{ topping.name }}</h2>
     <img :src="topping.img" class="img" draggable="false" />
   </div>

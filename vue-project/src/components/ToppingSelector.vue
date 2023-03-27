@@ -27,7 +27,7 @@ const toppings = [
 ]
 const pizza = []
 function pizzaCreate() {
-  pizza.push('https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png')
+  pizza.push()
   console.log(pizza)
 }
 </script>

@@ -11,6 +11,11 @@
       class="main"
       draggable="false"
     />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/beef.png"
+      class="main"
+      draggable="false"
+    />
   </div>
 </template>
 <style scoped>

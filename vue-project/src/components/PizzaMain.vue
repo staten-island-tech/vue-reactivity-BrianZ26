@@ -1,4 +1,6 @@
-<script></script>
+<script>
+var cheese = true
+</script>
 <template>
   <div class="create">
     <img
@@ -8,6 +10,31 @@
     />
     <img
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/tomato-sauce.png"
+      class="main"
+      draggable="false"
+    />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png"
+      class="main"
+      draggable="false"
+    />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/pepperoni.png"
+      class="main"
+      draggable="false"
+    />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/mushrooms.png"
+      class="main"
+      draggable="false"
+    />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/chicken.png"
+      class="main"
+      draggable="false"
+    />
+    <img
+      src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/bacon.png"
       class="main"
       draggable="false"
     />

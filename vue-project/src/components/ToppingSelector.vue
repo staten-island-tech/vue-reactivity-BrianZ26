@@ -1,4 +1,5 @@
 <script setup>
+import { reactive } from 'vue'
 const toppings = [
   {
     name: 'Pepperoni',

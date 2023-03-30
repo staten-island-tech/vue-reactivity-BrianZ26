@@ -1,5 +1,12 @@
-<script>
-var cheese = true
+<script setup>
+import { reactive } from 'vue'
+
+let cheese = true
+let pepperoni = true
+let mushrooms = false
+let chicken = false
+let bacon = false
+let beef = false
 </script>
 <template>
   <div class="create">
@@ -14,31 +21,37 @@ var cheese = true
       draggable="false"
     />
     <img
+      v-if="cheese"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/cheese.png"
       class="main"
       draggable="false"
     />
     <img
+      v-if="pepperoni"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/pepperoni.png"
       class="main"
       draggable="false"
     />
     <img
+      v-if="mushrooms"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/mushrooms.png"
       class="main"
       draggable="false"
     />
     <img
+      v-if="chicken"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/chicken.png"
       class="main"
       draggable="false"
     />
     <img
+      v-if="bacon"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/bacon.png"
       class="main"
       draggable="false"
     />
     <img
+      v-if="beef"
       src="https://212newyorkpizza.com/wp-content/plugins/pizzatime/images/beef.png"
       class="main"
       draggable="false"

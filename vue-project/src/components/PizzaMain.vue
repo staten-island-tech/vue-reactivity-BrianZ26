@@ -1,12 +1,10 @@
 <script setup>
-import { reactive } from 'vue'
-
-let cheese = true
-let pepperoni = true
-let mushrooms = false
-let chicken = false
-let bacon = false
-let beef = false
+import { cheese } from './store'
+import { pepperoni } from './store'
+import { mushrooms } from './store'
+import { chicken } from './store'
+import { bacon } from './store'
+import { beef } from './store'
 </script>
 <template>
   <div class="create">

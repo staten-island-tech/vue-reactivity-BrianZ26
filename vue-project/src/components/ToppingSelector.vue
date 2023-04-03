@@ -1,10 +1,4 @@
 <script setup>
-import { cheese } from './store'
-import { pepperoni } from './store'
-import { mushrooms } from './store'
-import { chicken } from './store'
-import { bacon } from './store'
-import { beef } from './store'
 const toppings = [
   {
     name: 'Pepperoni',
